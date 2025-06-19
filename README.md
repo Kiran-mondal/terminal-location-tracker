@@ -14,7 +14,7 @@
 
 ## 🛠️ Built With
 
-- **Language**: [Python 3.x](https://www.python.org/)
+- **Language**: [Python 3.13.2](https://www.python.org/)
 - **Libraries**: Only uses Python’s built-in modules:
   - `http.server`
   - `json`
