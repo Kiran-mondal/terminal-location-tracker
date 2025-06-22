@@ -1,0 +1,13 @@
+name: GitGuardian PR Scan
+
+on: [pull_request]
+
+jobs:
+  ggshield_scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: GitGuardian Secret Scan
+        uses: GitGuardian/ggshield/actions/scan-pr@main
+        env:
+          GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
