@@ -1,7 +1,5 @@
 name: GitGuardian scan
-
 on: [push, pull_request]
-
 jobs:
   scanning:
     name: GitGuardian scan
